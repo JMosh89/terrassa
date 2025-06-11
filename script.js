@@ -66,5 +66,16 @@ function createBandCards() {
     });
 }
 
-// Crear las tarjetas de las bandas cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', createBandCards);
+// Establecer el año actual en el footer
+function setFooterYear() {
+    const yearElement = document.getElementById('currentYear');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+}
+
+// Ejecutar funciones cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    createBandCards();
+    setFooterYear();
+});
