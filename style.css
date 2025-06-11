@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
+    --primary-color: #2c0000;
+    --secondary-color: #8b0000;
+    --accent-color: #c0392b;
     --text-color: #ecf0f1;
-    --background-dark: #1a1a1a;
+    --background-dark: #0a0000;
 }
 
 * {
@@ -18,7 +18,7 @@ html {
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: var(--background-dark);
+    background: linear-gradient(#160000, var(--background-dark));
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -28,7 +28,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(44, 62, 80, 0.95);
+    background-color: rgba(44, 0, 0, 0.95);
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
                 url('https://images.unsplash.com/photo-1542744173-8e7e42f8dbf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ body {
 }
 
 .countdown-container {
-    background: rgba(44, 62, 80, 0.8);
+    background: rgba(44, 0, 0, 0.8);
     padding: 2rem;
     border-radius: 10px;
     max-width: 800px;
@@ -145,7 +145,7 @@ body {
 }
 
 .info-box {
-    background: rgba(44, 62, 80, 0.8);
+    background: rgba(44, 0, 0, 0.8);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
