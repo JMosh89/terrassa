@@ -12,8 +12,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: var(--background-dark);
     color: var(--text-color);
     line-height: 1.6;
@@ -177,6 +181,52 @@ body {
 
 .social-links a:hover {
     color: var(--accent-color);
+}
+
+/* Map Section */
+.map-section {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: 0;
+    max-width: 800px;
+}
+
+/* Scroll to top */
+.scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
+}
+
+.scroll-top.show {
+    display: block;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 /* Footer */
