@@ -33,28 +33,25 @@ updateCountdown();
 
 // Ejemplo de bandas (estos datos deberían actualizarse según el lineup real)
 const posterPath = 'cartel diseño instagram  final.png';
+
+// Solo se muestra una tarjeta con el cartel oficial
 const bands = [
     {
-        name: 'tbd',
-        alt: 'tbd1',
-        description: '2025'
-    },
-    {
-        name: 'TBD',
-        alt: 'Cartel',
-        description: '2025'
-    },
-    {
-        name: 'TBD',
-        alt: 'Banda por anunciar',
-        description: '2025'
+        name: 'Cartel oficial',
+        image: posterPath,
+        alt: 'Cartel del festival',
+        description: 'Edición 2025'
     }
 ];
 
 // Función para crear las tarjetas de las bandas
 function createBandCards() {
     const lineupContainer = document.querySelector('.lineup-container');
-    
+    if (!lineupContainer) return;
+
+    // Limpiar contenedor para evitar duplicados
+    lineupContainer.innerHTML = '';
+
     bands.forEach(band => {
         const bandCard = document.createElement('div');
         bandCard.className = 'band-card';
