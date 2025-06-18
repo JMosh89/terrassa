@@ -37,7 +37,6 @@ const bands = [
     {
         name: 'tbd',
         alt: 'tbd1',
-        image: posterPath,
         description: '2025'
     },
     {
