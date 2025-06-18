@@ -137,11 +137,15 @@ body {
 }
 
 /* Estilo de la tarjeta de banda */
+.band-card {
+    text-align: left;
+}
+
 .band-card img {
     width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0;
 }
 
 /* Info Section */
