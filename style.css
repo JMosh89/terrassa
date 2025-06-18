@@ -109,6 +109,17 @@ body {
     margin: 0.5rem 0;
 }
 
+/* Poster Section */
+.poster {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.poster img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Lineup Section */
 .lineup {
     padding: 5rem 10%;
