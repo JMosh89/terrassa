@@ -32,21 +32,22 @@ const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
 // Ejemplo de bandas (estos datos deberían actualizarse según el lineup real)
+const posterPath = 'cartel diseño instagram  final.png';
 const bands = [
     {
-        name: "TBD",
+        name: `<img src="${posterPath}" alt="Cartel pequeño" class="small-poster">`,
         image: "https://via.placeholder.com/300x300",
-        description: "Próximamente"
+        description: "2025"
     },
     {
-        name: "TBD",
+        name: `<img src="${posterPath}" alt="Cartel pequeño" class="small-poster">`,
         image: "https://via.placeholder.com/300x300",
-        description: "Próximamente"
+        description: "2025"
     },
     {
-        name: "TBD",
+        name: `<img src="${posterPath}" alt="Cartel pequeño" class="small-poster">`,
         image: "https://via.placeholder.com/300x300",
-        description: "Próximamente"
+        description: "2025"
     }
 ];
 
