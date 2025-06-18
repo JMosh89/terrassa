@@ -136,6 +136,14 @@ body {
     gap: 2rem;
 }
 
+/* Estilo de la tarjeta de banda */
+.band-card img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Info Section */
 .info {
     padding: 5rem 10%;
