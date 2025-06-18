@@ -48,7 +48,6 @@ const bands = [
     {
         name: 'TBD',
         alt: 'Banda por anunciar',
-        image: 'https://via.placeholder.com/300x300',
         description: '2025'
     }
 ];
