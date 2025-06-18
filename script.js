@@ -42,8 +42,8 @@ const bands = [
     },
     {
         name: "TBD",
-        alt: "Banda por anunciar",
-        image: "https://via.placeholder.com/300x300",
+        alt: "Cartel",
+        image: posterPath,
         description: "2025"
     },
     {
@@ -61,7 +61,7 @@ function createBandCards() {
     bands.forEach((band, index) => {
         const bandCard = document.createElement('div');
         bandCard.className = 'band-card';
-        const imgClass = index === 0 ? ' class="small-poster"' : '';
+        const imgClass = index < 2 ? ' class="small-poster"' : '';
         bandCard.innerHTML = `
             <img src="${band.image}" alt="${band.alt}"${imgClass}>
             <h3>${band.name}</h3>
