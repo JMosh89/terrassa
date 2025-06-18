@@ -35,15 +35,14 @@ updateCountdown();
 const posterPath = 'cartel diseño instagram  final.png';
 const bands = [
     {
-        name: 'Cartel',
-        alt: 'Cartel',
+        name: 'tbd',
+        alt: 'tbd1',
         image: posterPath,
         description: '2025'
     },
     {
         name: 'TBD',
         alt: 'Cartel',
-        image: posterPath,
         description: '2025'
     },
     {
