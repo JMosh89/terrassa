@@ -36,16 +36,19 @@ const posterPath = 'cartel diseño instagram  final.png';
 const bands = [
     {
         name: `<img src="${posterPath}" alt="Cartel pequeño" class="small-poster">`,
+        alt: "Cartel",
         image: "https://via.placeholder.com/300x300",
         description: "2025"
     },
     {
-        name: `<img src="${posterPath}" alt="Cartel pequeño" class="small-poster">`,
+        name: "TBD",
+        alt: "Banda por anunciar",
         image: "https://via.placeholder.com/300x300",
         description: "2025"
     },
     {
-        name: `<img src="${posterPath}" alt="Cartel pequeño" class="small-poster">`,
+        name: "TBD",
+        alt: "Banda por anunciar",
         image: "https://via.placeholder.com/300x300",
         description: "2025"
     }
@@ -59,7 +62,7 @@ function createBandCards() {
         const bandCard = document.createElement('div');
         bandCard.className = 'band-card';
         bandCard.innerHTML = `
-            <img src="${band.image}" alt="${band.name}">
+            <img src="${band.image}" alt="${band.alt}">
             <h3>${band.name}</h3>
             <p>${band.description}</p>
         `;
