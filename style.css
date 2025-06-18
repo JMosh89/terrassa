@@ -136,12 +136,6 @@ body {
     gap: 2rem;
 }
 
-/* Small poster used in lineup placeholders */
-.small-poster {
-    width: 80px;
-    height: auto;
-}
-
 /* Info Section */
 .info {
     padding: 5rem 10%;
